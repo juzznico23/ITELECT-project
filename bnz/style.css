@@ -1,0 +1,55 @@
+*{
+    justify-content: center;
+
+}
+.navbar{
+    text-align: center;
+    background-color: #ffffff;
+}
+body{
+    justify-content: center;
+    display: flex;
+    background-color: black;
+}
+
+h2{
+    text-align: center;
+    align-self: center;
+    position: relative;
+    font-size: 6vw;
+    color:rgb(0, 0, 0);
+    -webkit-text-stroke: 0.1vw rgb(41, 148, 146) ;
+    text-transform: uppercase;
+}
+h2::before{
+    text-align: center;
+    align-self: center;
+    content: attr(data-text);
+    position:absolute;
+    top: 0;
+    left:1px;
+    width: 0;
+    height: 100%;
+    color:rgb(41, 148, 146);
+    -webkit-text-stroke: 0vw rgb(255, 255, 255);
+    border-right: 2px solid rgb(41, 148, 146);
+    overflow: hidden;
+    animation:animate 6s linear infinite;
+}
+@keyframes animate {
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+    
+}
+.carousel-inner{
+    justify-content: center;
+
+}
+.navbar{
+    
+    justify-content: center;
+}
